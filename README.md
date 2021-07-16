@@ -1,6 +1,6 @@
 ## Xibo - A digital signage CMS application 
 
-This example project uses `docker-compose.yml` file from https://github.com/xibosignage/xibo-docker and creates IEAM deployment files so that application can be deployed on IEAM. Access the deployed application as `http:<ip-address-of-your-edge-node>`.  
+This example project uses `docker-compose.yml` file from https://github.com/xibosignage/xibo-docker and creates IEAM deployment files so that application can be deployed on IEAM.  
 
 ### Notes
 
@@ -40,6 +40,8 @@ make
 cd register
 ./register.sh
 ```
+### Test and Verify
+Access the deployed application as `http:<ip-address-of-your-edge-node>`
 
 ### Reference and acknowledgments:
 https://xibo.org.uk/docs/setup/xibo-cms-with-docker-on-ubuntu-18-04
