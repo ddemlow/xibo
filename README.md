@@ -4,7 +4,7 @@ This example project uses `docker-compose.yml` file from https://github.com/xibo
 
 ### Notes
 
-IEAM uses `semver` naming scheme for releases. cms, xmr and ianw images had to be re-tagged and pushed into another repository to make the service publishing possible in IEAM.
+IEAM uses [semver](https://semver.org) naming scheme for releases. cms, xmr and ianw images had to be re-tagged and pushed into another repository to make the service publishing possible in IEAM.
 
 ### Setup
 Setup following ENV variables to publish the service, pattern and register the edge node.
