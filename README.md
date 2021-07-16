@@ -17,12 +17,6 @@ export EDGE_DEPLOY=<change-as-needed> e.g example.xibo
 
 #### Specify your docker login name
 export DOCKER_BASE=<change-as-needed> e.g edgedock
-
-### Authenticated docker access ###
-export CR_DOCKER_HOST=index.docker.io
-export CR_DOCKER_USERNAME=<change-as-needed> e.g edgedock
-export CR_DOCKER_APIKEY=<change-as-needed>
-##################################
     
 # Sets the root of the bind volume. Create this before running the application with 777 access
 export APP_BIND_HORIZON_DIR=/var/local/horizon
