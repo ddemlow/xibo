@@ -9,9 +9,8 @@ IEAM uses `semver` naming scheme for releases. cms, xmr and ianw images had to b
 ### Setup
 Setup following ENV variables to publish the service, pattern and register the edge node.
 
-#### Enviornment variables EDGE_OWNER, EDGE_DEPLOY to identify service. Change as needed to organize your service, policy names etc.
-
 ```
+#### Enviornment variables EDGE_OWNER, EDGE_DEPLOY to identify service. Change as needed to organize your service, policy names etc.
 export EDGE_OWNER=<change-as-needed> e.g sg.edge           
 export EDGE_DEPLOY=<change-as-needed> e.g example.xibo 
 
