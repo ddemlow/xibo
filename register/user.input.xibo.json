@@ -1,0 +1,20 @@
+{
+    "services": [
+	{
+	    "org": "$HZN_ORG_ID",
+	    "url": "$EDGE_OWNER.$EDGE_DEPLOY.mysql",
+	    "versionRange": "[0.0.0,INFINITY)",
+	    "variables": {
+		"MYSQL_PASSWORD" : "$MYSQL_PASSWORD"
+	    }
+	},
+	{
+	    "org": "$HZN_ORG_ID",
+	    "url": "$EDGE_OWNER.$EDGE_DEPLOY.cms",
+	    "versionRange": "[0.0.0,INFINITY)",
+	    "variables": {
+		"MYSQL_PASSWORD" : "$MYSQL_PASSWORD"
+	    }
+	}
+    ]
+}

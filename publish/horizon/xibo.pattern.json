@@ -1,0 +1,38 @@
+{
+    "name": "pattern-$EDGE_OWNER.$EDGE_DEPLOY.xibo-main",
+    "label": "Edge xibo Service",
+    "description": "Pattern for xibo",
+    "public": false,
+    "services": [
+	{
+	    "serviceUrl": "$EDGE_OWNER.$EDGE_DEPLOY.cms",
+	    "serviceOrgid": "$HZN_ORG_ID",
+	    "serviceArch": "$ARCH",
+	    "serviceVersions": [
+		{ 
+		    "version": "3.0.0"
+		}
+	    ]
+	},
+	{
+	    "serviceUrl": "$EDGE_OWNER.$EDGE_DEPLOY.memcached",
+	    "serviceOrgid": "$HZN_ORG_ID",
+	    "serviceArch": "$ARCH",
+	    "serviceVersions": [
+		{ 
+		    "version": "1.6.9"
+		}
+	    ]
+	},
+	{
+	    "serviceUrl": "$EDGE_OWNER.$EDGE_DEPLOY.ianw",
+	    "serviceOrgid": "$HZN_ORG_ID",
+	    "serviceArch": "$ARCH",
+	    "serviceVersions": [
+		{ 
+		    "version": "1.5.0"
+		}
+	    ]
+	}
+    ]
+}

@@ -1,0 +1,8 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "ianw",
+	"DOCKER_IMAGE_BASE": "$(DOCKER_BASE)/$(EDGE_OWNER).$(EDGE_DEPLOY).ianw",
+        "SERVICE_NAME": "$(EDGE_OWNER).$(EDGE_DEPLOY).ianw",
+        "SERVICE_VERSION": "1.5.0"
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "cms",
+	"DOCKER_IMAGE_BASE": "$(DOCKER_BASE)/$(EDGE_OWNER).$(EDGE_DEPLOY).cms",
+        "SERVICE_NAME": "$(EDGE_OWNER).$(EDGE_DEPLOY).cms",
+        "SERVICE_VERSION": "3.0.0"
+    }
+}

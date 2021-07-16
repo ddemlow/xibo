@@ -1,0 +1,8 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "xmr",
+	"DOCKER_IMAGE_BASE": "$(DOCKER_BASE)/$(EDGE_OWNER).$(EDGE_DEPLOY).xmr",
+        "SERVICE_NAME": "$(EDGE_OWNER).$(EDGE_DEPLOY).xmr",
+        "SERVICE_VERSION": "0.8"
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "mysql",
+        "SERVICE_NAME": "$(EDGE_OWNER).$(EDGE_DEPLOY).mysql",
+        "SERVICE_VERSION": "5.7"
+    }
+}

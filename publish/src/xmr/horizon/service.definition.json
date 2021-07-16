@@ -1,0 +1,26 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME-$ARCH",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "public": true,
+    "sharable": "singleton",
+    "requiredServices": [
+    ],
+    "userInput": [
+    ],
+    "deployment": {
+	"services": {
+	    "$SERVICE_NAME": {
+		"image": "${DOCKER_IMAGE_BASE}:$SERVICE_VERSION",
+		"ports": [
+		    {
+			"HostPort":"9505:9505:tcp",
+			"HostIP":"0.0.0.0"
+		    }
+                ]
+	    }
+	}
+    }
+}

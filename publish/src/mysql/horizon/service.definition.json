@@ -1,0 +1,27 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME-$ARCH",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "public": true,
+    "sharable": "singleton",
+    "requiredServices": [
+    ],
+    "userInput": [
+	{ "name": "MYSQL_DATABASE", "label": "mysql-database-user", "type": "string", "defaultValue": "cms" },
+	{ "name": "MYSQL_USER", "label": "mysql-user", "type": "string", "defaultValue": "cms" },
+	{ "name": "MYSQL_PASSWORD", "label": "mysql-password", "type": "string", "defaultValue": "" },
+	{ "name": "MYSQL_RANDOM_ROOT_PASSWORD", "label": "mysql-random-root-password", "type": "string", "defaultValue": "yes" }
+    ],
+    "deployment": {
+	"services": {
+	    "$SERVICE_NAME": {
+		"image": "$IMAGE_NAME:$SERVICE_VERSION",
+		"binds": [
+                    "$APP_BIND_HORIZON_DIR/xibo/mysql:/var/lib/mysql:Z"
+                ]
+	    }
+	}
+    }
+}

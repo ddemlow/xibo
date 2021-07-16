@@ -1,0 +1,41 @@
+{
+    "org": "$HZN_ORG_ID",
+    "label": "$SERVICE_NAME-$ARCH",
+    "url": "$SERVICE_NAME",
+    "version": "$SERVICE_VERSION",
+    "arch": "$ARCH",
+    "public": true,
+    "sharable": "singleton",
+    "requiredServices": [
+	{ "url": "$EDGE_OWNER.$EDGE_DEPLOY.mysql", "org": "$HZN_ORG_ID", "version": "5.7", "versionRange": "5.7", "arch": "$ARCH" },
+	{ "url": "$EDGE_OWNER.$EDGE_DEPLOY.xmr", "org": "$HZN_ORG_ID", "version": "0.8", "versionRange": "0.8", "arch": "$ARCH" }
+    ],
+    "userInput": [
+	{ "name": "MYSQL_PASSWORD", "label": "mysql-password", "type": "string", "defaultValue": "" },
+	{ "name": "MYSQL_HOST", "label": "mysql-password", "type": "string", "defaultValue": "$EDGE_OWNER.$EDGE_DEPLOY.mysql" },
+	{ "name": "XMR_HOST", "label": "xmr-host", "type": "string", "defaultValue": "cms-xmr" },
+	{ "name": "CMS_USE_MEMCACHED", "label": "cms-use-memcached", "type": "boolean", "defaultValue": "true" },
+	{ "name": "MEMCACHED_HOST", "label": "memcached-host", "type": "string", "defaultValue": "cms-memcached" }
+    ],
+    "deployment": {
+	"services": {
+	    "$SERVICE_NAME": {
+		"image": "${DOCKER_IMAGE_BASE}:$SERVICE_VERSION",
+		"binds": [
+                    "$APP_BIND_HORIZON_DIR/xibo/cms/custom:/var/www/cms/custom:Z",
+                    "$APP_BIND_HORIZON_DIR/xibo/backup:/var/www/backup:Z",
+                    "$APP_BIND_HORIZON_DIR/xibo/cms/web/theme/custom:/var/www/cms/web/theme/custom:Z",
+                    "$APP_BIND_HORIZON_DIR/xibo/cms/library:/var/www/cms/library:Z",
+                    "$APP_BIND_HORIZON_DIR/xibo/cms/web/userscripts:/var/www/cms/web/userscripts:Z",
+                    "$APP_BIND_HORIZON_DIR/xibo/cms/ca-certs:/var/www/cms/ca-certs:Z"
+                ],
+		"ports": [
+		    {
+			"HostPort":"80:80:tcp",
+			"HostIP":"0.0.0.0"
+		    }
+                ]
+	    }
+	}
+    }
+}

@@ -1,0 +1,7 @@
+{
+    "MetadataVars": {
+        "IMAGE_NAME": "memcached",
+        "SERVICE_NAME": "$(EDGE_OWNER).$(EDGE_DEPLOY).memcached",
+        "SERVICE_VERSION": "1.6.9"
+    }
+}
