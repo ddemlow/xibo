@@ -1,6 +1,6 @@
 ## Xibo - A digital signage CMS application 
 
-This example project uses `docker-compose.yml` file from https://github.com/xibosignage/xibo-docker and creates IEAM deployment files so that application can be deployed on IEAM.  
+This example project uses `docker-compose.yml` file from https://github.com/xibosignage/xibo-docker and creates IEAM deployment files so that application can be deployed on IEAM. Application migration was done manually and it was not that difficult.
 
 ### Notes
 
