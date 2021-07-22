@@ -18,8 +18,9 @@
 	"services": {
 	    "$SERVICE_NAME": {
 		"image": "$IMAGE_NAME:$SERVICE_VERSION",
+		"privileged": true,
 		"binds": [
-                    "$APP_BIND_HORIZON_DIR/xibo/mysql:/var/lib/mysql:Z"
+                    "$APP_BIND_HORIZON_DIR/xibo/mysql:/var/lib/mysql:rw"
                 ]
 	    }
 	}

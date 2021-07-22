@@ -1,0 +1,10 @@
+{  
+"properties": [
+      { "name": "owner",  "value": "dd.edge" },
+      { "name": "deploy",  "value": "scale.xibo" },
+      { "name": "mmsconfig", "value": true },
+      { "name": "openhorizon.allowPrivileged", "value": true }
+  ],
+  "constraints": [
+  ]
+}

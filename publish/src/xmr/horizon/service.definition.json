@@ -14,6 +14,7 @@
 	"services": {
 	    "$SERVICE_NAME": {
 		"image": "${DOCKER_IMAGE_BASE}:$SERVICE_VERSION",
+		"privileged": true,
 		"ports": [
 		    {
 			"HostPort":"9505:9505:tcp",

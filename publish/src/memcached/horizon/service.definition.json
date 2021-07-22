@@ -13,7 +13,8 @@
     "deployment": {
 	"services": {
 	    "$SERVICE_NAME": {
-		"image": "${IMAGE_NAME}:$SERVICE_VERSION"
+		"image": "${IMAGE_NAME}:$SERVICE_VERSION",
+		"privileged": true
 	    }
 	}
     }
