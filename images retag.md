@@ -12,7 +12,7 @@ docker pull xibosignage/xibo-cms:release-3.0.0
 docker image tag  xibosignage/xibo-xmr:release-3.0.0 $DOCKER_BASE/$EDGE_OWNER.$EDGE_DEPLOY.cms:3.0.0
 docker push $DOCKER_BASE/$EDGE_OWNER.$EDGE_DEPLOY.cms:3.0.0
 
-(using environment variables which should be set - else change as appropriate)
+(using environment variables which should be set - else change as appropriate - for example docker image tag  ianw/quickchart:latest ddemlow/dd.edge.scale.xibo.cms:3.0.0)
 
 need to do the same for
 
